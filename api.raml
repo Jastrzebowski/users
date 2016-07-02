@@ -1,0 +1,23 @@
+#%RAML 0.8
+title: Users API
+baseUri: https://jsonplaceholder.typicode.com
+version: v1
+mediaType:  application/json
+
+/users:
+  get:
+    responses:
+      200:
+        body:
+          schema: !include schemas/users.schema.json
+  /{userId}:
+    get:
+      responses:
+        200:
+          body:
+            schema: !include schemas/user.schema.json
+    put:
+      body:
+        schema: !include schemas/user.schema.json
+      responses:
+        201:

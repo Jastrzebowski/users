@@ -1,0 +1,38 @@
+{
+  "title": "Adress data",
+  "description": "Adress model data",
+  "type": "object",
+  "properties": {
+    "street": {
+      "type": "string",
+      "faker": "address.streetName"
+    },
+    "suite": {
+      "type": "string",
+      "faker": "address.streetAddress"
+    },
+    "city": {
+      "type": "string",
+      "faker": "address.city"
+    },
+    "zipcode": {
+      "type": "string",
+      "faker": "address.zipCode"
+    },
+    "geo": {
+      "type": "object",
+      "properties": {
+        "lat": {
+          "type": "string",
+          "faker": "address.latitude"
+        },
+        "lng": {
+          "type": "string",
+          "faker": "address.longitude"
+        }
+      },
+      "required": [ "lat", "lng" ]
+    }
+  },
+  "required": [ "street", "suite", "city", "zipcode", "geo" ]
+}

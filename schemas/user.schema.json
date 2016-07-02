@@ -1,0 +1,38 @@
+{
+  "title": "User data",
+  "description": "User model data",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "name": {
+      "type": "string",
+      "faker": "name.firstName"
+    },
+    "username": {
+      "type": "string",
+      "faker": "name.firstName"
+    },
+    "email": {
+      "type": "string",
+      "faker": "internet.email"
+    },
+    "address": {
+      "$ref": "address.schema.json"
+    },
+    "phone": {
+      "type": "string",
+      "faker": "phone.phoneNumber"
+    },
+    "website": {
+      "type": "string",
+      "faker": "internet.url"
+    },
+    "company": {
+      "$ref": "company.schema.json"
+    }
+  },
+  "required": [ "id", "name", "username", "email", "address", "phone", "website", "company" ]
+}

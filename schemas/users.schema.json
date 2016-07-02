@@ -1,0 +1,11 @@
+{
+  "title": "Users data",
+  "description": "Users Colection data",
+  "type": "array",
+  "items": {
+    "$ref": "user.schema.json"
+  },
+  "minItems": 1,
+  "maxItems": 32,
+  "uniqueItems": true
+}
