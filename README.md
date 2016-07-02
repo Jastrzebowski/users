@@ -1,2 +1,2 @@
 # users
-Kantox users example
+React Backbone Users example

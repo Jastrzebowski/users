@@ -1,7 +1,7 @@
 {
   "name": "users",
   "version": "0.0.1",
-  "description": "Kantox users example",
+  "description": "React Backbone users example",
   "main": "server.js",
   "scripts": {
     "raml:mockup": "raml-mockup api.raml -f http://json-schema.org -d schemas -w",
