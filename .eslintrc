@@ -354,7 +354,7 @@
     "react/jsx-equals-spacing": 1,                            // Enforce or disallow spaces around equal signs in JSX attributes
     "react/jsx-handler-names": 1,                             // Enforce event handler naming conventions in JSX
     "react/jsx-indent-props": 1,                              // Validate props indentation in JSX
-    "react/jsx-indent": 1,                                    // Validate JSX indentation
+    "react/jsx-indent": [2, 2],                               // Validate JSX indentation
     "react/jsx-key": 1,                                       // Validate JSX has key prop when in array or iterator
     "react/jsx-max-props-per-line": [1, {"maximum": 3}],      // Limit maximum of props on a single line in JSX
     "react/jsx-no-bind": [2, {"ignoreRefs": true}],           // Prevent usage of .bind() and arrow functions in JSX props
