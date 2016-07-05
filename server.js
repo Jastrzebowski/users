@@ -31,7 +31,7 @@ http.createServer((req, res) => {
       </head>
     <body class="loading">
       <div class="container" id="app"></div>
-      <script src="https://localhost:2048/scripts/App.js"></script>
+      <script src="http://localhost:2048/scripts/App.js"></script>
     </body>
     </html>
   `);

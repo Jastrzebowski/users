@@ -10,7 +10,7 @@ export default {
     filename: '[name].js',
     chunkFilename: '[id].js',
     path: path.join(__dirname, 'scripts'),
-    publicPath: 'https://localhost:2048/scripts/'
+    publicPath: 'http://localhost:2048/scripts/'
   },
   module: {
     loaders: [
@@ -30,7 +30,6 @@ export default {
   ],
   devtool: 'cheap-module-eval-source-map',
   devServer: {
-    https: true,
     hot: true,
     inline: true,
     port: 2048
